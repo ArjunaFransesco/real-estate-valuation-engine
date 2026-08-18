@@ -1,0 +1,57 @@
+{
+  "test_performance": {
+    "R2_Score": 0.9759,
+    "RMSE_USD": 112202.28,
+    "MAE_USD": 70062.9,
+    "MAPE_Percent": 7.01,
+    "Median_AE_USD": 45601.37
+  },
+  "cv_benchmark": [
+    {
+      "Model": "LightGBM",
+      "CV_R2_Mean": 0.9744,
+      "CV_R2_Std": 0.0028,
+      "CV_RMSE_USD": 116721.54,
+      "CV_MAE_USD": 69534.88,
+      "CV_MAPE_%": 6.64
+    },
+    {
+      "Model": "Gradient_Boosting",
+      "CV_R2_Mean": 0.9708,
+      "CV_R2_Std": 0.004,
+      "CV_RMSE_USD": 124492.41,
+      "CV_MAE_USD": 72692.38,
+      "CV_MAPE_%": 6.88
+    },
+    {
+      "Model": "XGBoost",
+      "CV_R2_Mean": 0.9706,
+      "CV_R2_Std": 0.0046,
+      "CV_RMSE_USD": 124728.46,
+      "CV_MAE_USD": 71405.73,
+      "CV_MAPE_%": 6.74
+    },
+    {
+      "Model": "Random_Forest",
+      "CV_R2_Mean": 0.9534,
+      "CV_R2_Std": 0.0043,
+      "CV_RMSE_USD": 157493.05,
+      "CV_MAE_USD": 97811.25,
+      "CV_MAPE_%": 9.89
+    },
+    {
+      "Model": "Ridge_Regression",
+      "CV_R2_Mean": 0.9514,
+      "CV_R2_Std": 0.0044,
+      "CV_RMSE_USD": 160636.98,
+      "CV_MAE_USD": 103807.48,
+      "CV_MAPE_%": 13.68
+    }
+  ],
+  "dataset_summary": {
+    "total_samples": 5000,
+    "train_samples": 4000,
+    "test_samples": 1000,
+    "features_count": 47
+  }
+}
